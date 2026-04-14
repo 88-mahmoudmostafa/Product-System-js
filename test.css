@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: darkgrey;
+}
+.container{
+     width: 80%;
+     text-align: center;
+     margin: auto;
+     margin-top: 20px;
+     margin-bottom:20px;
+     /* border:1px solid #000; */
+     overflow: hidden;
+}
+.head{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    gap: 20px;
+}
+input{
+    width: 80%;
+    background-color:#000;
+    padding: 5px;
+    margin: 8px;
+    color: rgb(245, 235, 235);
+    border-radius: 20px;
+    transition: 1.15s ease;
+}
+input:hover{
+     /* border: 1px solid wheat; */
+    width: 85%; 
+    /* padding: 6px; */
+}
+
+.number{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    /* margin-left: 100px; */
+}
+.number input{
+    text-align: center;
+    width: 20%;
+
+}
+.number input:hover{
+
+    
+}
+input:focus{
+ background-color: white;   
+ color: #000; 
+}
+#total{
+    /* display: inline; */
+    background-color: red;
+    padding: 5px 2px;
+    border-radius: 15px;
+    width: 80px;
+    color: white;
+}
+#total::before{
+    content: 'total:  ';
+}
+#submit{
+    text-align: center;
+    background-color: rgb(124, 23, 219);
+    width: 80%;
+    border-radius: 28px;
+    padding: 5px 8px;
+    color: white;
+    transition: 1.9s ease;
+    /* margin-left: 40px; */
+}
+#submit:hover{
+    background-color: rgb(166, 90, 238);
+    width: 90%;
+    
+}
+.play{
+text-align: center;
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+#searchtitle,#searchcategory{
+    padding: 5px;
+    background-color: rgb(103, 14, 185);
+    border-radius: 28px;
+    color: white;
+    width: 40%;
+
+}
+#searchtitle:hover,#searchcategory:hover{
+
+    background-color: rgb(145, 87, 199);
+}
+
+/* #searchcategory{
+  width: 40%;
+  padding: 5px;
+} */
+.output{
+width: 80%;
+margin: auto;
+}
+table{
+    width: 100%;
+    text-align: center;
+
+ 
+}
+th{
+   padding: 5px;
+   margin: 5px;
+   font-size: 15px;
+   text-transform: uppercase;
+
+}
+td{
+   font-size: 20px;
+
+}
+#update,#delete{
+   
+background-color: rgb(103, 6, 194);
+border-radius: 20px;
+padding: 7px 15px;
+color: white;
+}
+ #update:hover,#delete:hover{ 
+    background-color: rgb(153, 90, 212);
+}
+#deleteAll{
+    /* 
+    
+    width: 100%;
+    border: none;
+    padding: 5px;
+   
+    border-radius: 15px;
+    color: white; */
+    margin: 20px 0; 
+    background-color:blueviolet;
+    width: 80%;
+    border-radius: 15px;
+    padding: 5px;
+}
+button{
+     /* background-color: blueviolet; */
+}
+
+
+@media (min-width:300px) and (max-width:600px) {
+    body{
+
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .output{
+    width: 100%;
+
+    }
+    table{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    th{
+        padding: 1px;
+         margin: 1px;
+         font-size: 10px;
+         font-weight: 900;
+         
+    }
+    td{
+        
+    }
+    #update,#delete{
+        padding: 3px;
+        margin: 1px;
+    }
+}
+@media (min-width:601px) and (max-width:900px){
+    .container{
+        width: 100%;
+        margin: 5px;
+        padding: 0;
+        margin-left: 0;
+        
+    }
+    .output{
+        width: 90%;
+    }
+    th{
+        padding: 1px;
+        margin: 4px;
+        font-size:10px ;
+        font-weight: 900;
+    }
+}
