@@ -5,6 +5,10 @@
 body{
     background-color: darkgrey;
 }
+button{
+    border: none;
+    outline: 0;
+}
 .container{
      width: 80%;
      text-align: center;
@@ -63,12 +67,13 @@ input:focus{
     background-color: red;
     padding: 5px 2px;
     border-radius: 15px;
-    width: 80px;
+    width: fit-content;
+    height: fit-content;
     color: white;
 }
-#total::before{
+/* #total::before{
     content: 'total:  ';
-}
+} */
 #submit{
     text-align: center;
     background-color: rgb(124, 23, 219);
@@ -178,18 +183,21 @@ button{
         margin: 0;
     }
     th{
-        padding: 1px;
-         margin: 1px;
-         font-size: 10px;
+        padding: 1px 1PX;
+         margin: 1px 1PX;
+         font-size: 14px;
          font-weight: 900;
+         text-transform: lowercase;
          
     }
     td{
-        
+       
+        font-size: 12PX;
     }
     #update,#delete{
-        padding: 3px;
-        margin: 1px;
+        padding: 1px 0px;
+        margin: 1px 0px;
+        font-size: 15px;
     }
 }
 @media (min-width:601px) and (max-width:900px){

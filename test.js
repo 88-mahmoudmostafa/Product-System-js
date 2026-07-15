@@ -19,7 +19,7 @@ function gettotal(){
      total.innerHTML=result;
      total.style.background='#040'
     }else{
-        total.innerHTML="";
+        total.innerHTML="0";
         total.style.backgroundColor='#a00d02';
     }
 
