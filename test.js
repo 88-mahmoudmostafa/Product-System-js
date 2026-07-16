@@ -186,7 +186,7 @@ let search=document.getElementById('search')
  function searchdata(value){
     let table='';
     for(let i=0;i<datapro.length;i++){
-        if(searchMood=='title'&& datapro[i].title.includes(value)||searchMood=='category' && datapro[i].category.includes(value)){
+        if(searchMood=='title'&& datapro[i].title.toLowerCase().includes(value)||searchMood=='category' && datapro[i].category.toLowerCase().includes(value)){
                table+=`
         
          <tr>
