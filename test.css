@@ -10,13 +10,17 @@ button{
     outline: 0;
 }
 .container{
-     width: 80%;
+     width: 100%;
      text-align: center;
      margin: auto;
      margin-top: 20px;
      margin-bottom:20px;
      /* border:1px solid #000; */
      overflow: hidden;
+}
+form{
+    width: 90%;
+    margin: auto;
 }
 .head{
     display: block;
@@ -163,7 +167,7 @@ button{
 }
 
 
-@media (min-width:300px) and (max-width:600px) {
+@media (min-width:250px) and (max-width:600px) {
     body{
 
     }
