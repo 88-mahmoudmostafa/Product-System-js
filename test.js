@@ -14,7 +14,7 @@ let submit=document.getElementById('submit');
 
 // gettotal
 function gettotal(){
-    if(price.value !=''){
+    if(price.value !==''){
     let result=(+price.value + +taxes.value +  +ads.value)-+discount.value;
      total.innerHTML=result;
      total.style.background='#040'
@@ -27,7 +27,6 @@ function gettotal(){
 // create product
 
 let datapro;
-
 if(localStorage.product != null){
     datapro = JSON.parse(localStorage.getItem('product'))||[];
 }
@@ -175,7 +174,7 @@ let search=document.getElementById('search')
  function  getSearchMood(id){
     if(id=='searchtitle'){
        searchMood='title'
-    }else{
+    }else if(id=='searchcategory'){
     searchMood='category';
     }
     search.placeholder='search By'+searchMood;
@@ -185,6 +184,7 @@ let search=document.getElementById('search')
 
  function searchdata(value){
     let table='';
+    value=value.toLowerCase();
     for(let i=0;i<datapro.length;i++){
         if(searchMood=='title'&& datapro[i].title.toLowerCase().includes(value)||searchMood=='category' && datapro[i].category.toLowerCase().includes(value)){
                table+=`
