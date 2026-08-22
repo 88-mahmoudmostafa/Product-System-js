@@ -198,8 +198,8 @@ let search=document.getElementById('search')
                     <td>${datapro[i].discount}</td>
                     <td>${datapro[i].total}</td>
                     <td>${datapro[i].category}</td>
-                    <td><button onclick="updatedata(${i})" id="update">update</button></td>
-                    <td><button onclick="deletedata(${i})" id="delete">delete</button></td>
+                    <td><button type="button" onclick="updatedata(${i})" id="update">update</button></td>
+                    <td><button type="button" onclick="deletedata(${i})" id="delete">delete</button></td>
                 </tr>
         
         
