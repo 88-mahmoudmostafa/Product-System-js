@@ -106,7 +106,7 @@ gap: 30px;
     border-radius: 28px;
     color: white;
     width: 40%;
-    font-size: 22px;
+    font-size: 20px;
 
 }
 #searchtitle:hover,#searchcategory:hover{
@@ -196,9 +196,16 @@ color: white;
         font-weight: 100;
         width: 100%;
     }
+    #searchtitle,#searchcategory{
+        font-size: 15px;
+    }
+
 }
 @media (min-width:601px) and (max-width:900px){
  
+    #searchtitle,#searchcategory{
+        font-size: 17px;
+    }
     .output{
         width: 90%;
     }
